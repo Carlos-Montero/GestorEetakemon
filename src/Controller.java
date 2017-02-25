@@ -25,7 +25,7 @@ public class Controller {
         }
     }
 
-    public int counter (){     //obtain current id counter
+    public int counter (){     //obtain current ID counter
         return currentID;
     }
 
