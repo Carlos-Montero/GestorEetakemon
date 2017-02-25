@@ -3,9 +3,9 @@
  */
 public class Eetakemon {
 
-    public String name;
-    public int id;
-    public int level;
+    private String name;  //en vez de public seria mejor ponerlo privado (los atributos)
+    private int id;
+    private int level;
 
     public Eetakemon(){}
 
