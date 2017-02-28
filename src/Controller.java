@@ -35,19 +35,19 @@ public class Controller {
         currentID++;
     }
 
-    public boolean deleteEetakemonByID(int id){ //delete Eetakemon by ID
+    public int deleteEetakemonByID(int id){ //delete Eetakemon by ID
 
-        boolean found = false;
-        for (int i=0;(i < lista.size() && !found); i++){
+        int found=0;  //0 si no lo encuentra
+        for (int i=0;i < lista.size(); i++){
 
-            if(lista.get(i).getId() == id){
+            if(lista.get(i).getId()== id){
 
-                found = true;
+                found = 1; //si lo encuentra
                 lista.remove(i);
             }
         }
-
         return found;
+
     }
 
     public List<Eetakemon> showAll(){  //return current Eetakemon list

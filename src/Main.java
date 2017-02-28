@@ -40,14 +40,14 @@ public class Main {
                     case 2:// delete Eetakemon by ID   FALTA
                         System.out.println ("Introduce ID");
                         int ID = Integer.parseInt(buff.readLine());
-                        boolean res = control.deleteEetakemonByID(ID);
+                        int res = control.deleteEetakemonByID(ID);
                         System.out.println();
-                        if (!res){
+                        if (res==0){
                             System.out.println("No results found by id: " + ID);
                         }
                         else{
-                            Eetakemon E =control.getEetakemonById(ID);
-                            System.out.println("Eetakemon delete correctly (Name: " + E.getName() + ",ID: " + ID + ",level:" + E.getLevel() + ")");
+                           // Eetakemon E =control.getEetakemonById(ID);
+                            System.out.println("Eetakemon delete correctly");
                         }
 
 
