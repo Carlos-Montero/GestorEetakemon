@@ -37,7 +37,7 @@ public class Main {
                         Eetakemon e = new Eetakemon(name,id, level);
                         control.addEetakemon(e);
                         break;
-                    case 2:// delete Eetakemon by ID   FALTA
+                    case 2:// delete Eetakemon by ID   FUNCIONA
                         System.out.println ("Introduce ID");
                         int ID = Integer.parseInt(buff.readLine());
                         int res = control.deleteEetakemonByID(ID);
